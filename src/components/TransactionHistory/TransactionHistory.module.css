@@ -1,15 +1,32 @@
-.transactionHistory {
-  width: 800px;
-  border: 2px solid brown;
-  background-color: white;
-  border-radius: 15px;
-  padding: 5px;
+.transaction {
+  background-color: #fff;
+  width: 600px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 1rem 1rem 2rem rgb(33, 32, 32), -1rem -1rem 2rem rgb(32, 31, 31);
 }
 
-.transactionHistory thead {
+th,
+td {
+  height: 50px;
+  text-align: center;
+  border: 1px solid #555;
+}
+
+th {
+  background-color: #086129;
+  color: #fff;
+  font-size: 14px;
   text-transform: uppercase;
-  color: white;
-  background-color: #b9aef3;
-  font-size: 30px;
-  line-height: 50px;
+}
+
+tr {
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd0c0;
 }

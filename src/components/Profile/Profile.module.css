@@ -1,81 +1,65 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 .profile {
-  width: 360px;
-  min-height: 500px;
-  background-color: white;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 15px;
-  box-shadow: 5px 10px 5px rgb(73, 3, 67);
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  background-color: #e6dcdc;
+  width: 300px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  box-shadow: 1rem 1rem 2rem rgb(65, 64, 64), -1rem -1rem 2rem rgb(82, 81, 81);
 }
 
 .description {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 30px;
 }
 
 .avatar {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 50% 50% 50% 50%;
-  background-color: gray;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 30%;
+  border: 2px solid #797979;
 }
 
 .name {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.tag {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #7a838b;
-  font-weight: 600;
-}
-
-.location {
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: #7a838b;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .stats {
   list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70px;
+  border-top: 1px solid rgb(146, 146, 146);
+  background-color: #2b2a2a;
+  margin: 0;
+  padding: 0;
 }
-.stats li {
+
+p {
+  margin-bottom: 0;
+}
+
+.stats > li {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  background-color: #f2f6f8;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #7a838b;
-  width: 120px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
+  align-items: center;
+  border-right: 1px solid #ccc;
+}
+
+.stats > li:last-child {
+  border-right: none;
 }
 
 .label {
-  color: #7a838b;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .quantity {
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 20px;
+  color: rgb(143, 105, 105);
 }
